@@ -1,0 +1,2 @@
+artifacts/**/* -diff -merge
+artifacts/**/* linguist-generated=true

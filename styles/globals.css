@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Times New Roman', serif;
+  color: white;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.web3modal-modal-card {
+  border-radius: 16px;
+  border: 1px solid #817456;
+}
+
+.web3modal-provider-wrapper {
+  border: none !important;
+}
+
+.web3modal-modal-card > *:not(:last-child) {
+  border-bottom: 1px solid #817456 !important;
+}

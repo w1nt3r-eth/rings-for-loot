@@ -1,0 +1,600 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+p {
+  font-family: Times;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  color: white;
+  font-family: 'Times', serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+body header {
+  padding: 0 6px 0 8px;
+  height: 60px;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+}
+body header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 0 32px;
+}
+body header ul li {
+  font-size: 20px;
+  line-height: 28px;
+}
+body main {
+  width: 1248px;
+  /* background-color: rgba(22, 22, 22, 0.637); */
+  padding: 0 32px;
+  max-width: -webkit-fill-available;
+}
+body main #intro {
+  font-size: 40px;
+  line-height: 56px;
+  display: inline-flex;
+  align-items: center;
+}
+body main #intro .heading {
+  width: max-content;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.image-xl {
+  width: 720px;
+  height: 720px;
+  background-color: rgb(22, 22, 22);
+  content: '';
+  background-size: cover;
+  margin-left: 80px;
+  /* border: 2px solid salmon; */
+}
+.image-xl.mainRing {
+  background-image: url('../public/images/mainRing.png');
+}
+.image-xl.ringProtection {
+  background-image: url('../public/images/ringProtection.png');
+}
+.image-xl.ringRage {
+  background-image: url('../public/images/ringRage.png');
+  margin-left: -128px;
+  margin-right: 80px;
+}
+.image-xl.forging {
+  background-image: url('../public/images/forging.png');
+  margin-right: -128px;
+}
+.image-xl.timeline {
+  background-image: url('../public/images/ringFox.png');
+  margin: 0;
+  margin-right: 80px;
+}
+.image-sm {
+  width: 592px;
+  height: 592px;
+  background-color: rgb(22, 22, 22);
+  content: '';
+  background-image: url('../public/images/ringEnlightenment.png');
+  background-size: cover;
+  z-index: 2;
+  margin-right: 80px;
+  /* border: 2px solid salmon; */
+}
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+section.rings {
+  align-items: flex-start;
+  margin-top: 128px;
+}
+section.rings .content {
+  margin-top: 28px;
+}
+section.rings .content p {
+  margin-top: 24px;
+}
+section.rarity {
+  margin-top: -128px;
+}
+section.loot {
+  margin: 128px 0;
+}
+section.loot .content .everyone {
+  margin-top: 80px;
+}
+section.loot .content p {
+  margin-top: 24px;
+}
+section.forging .content p,
+section.supply .ringOptions div p,
+section.timeline .content p,
+section.supply .ringOptions div p {
+  margin-top: 8px;
+}
+section.forging .content p.topSpacer,
+section.timeline .content p.topSpacer {
+  margin-top: 24px;
+}
+section.forging .content h2,
+section.timeline .content h2 {
+  margin-bottom: 16px;
+}
+section.timeline {
+  margin-top: 128px;
+}
+section.timeline a {
+  color: #e5bf72;
+  font-weight: normal;
+}
+section.supply {
+  margin-top: 128px;
+  flex-direction: column;
+}
+section.supply h2,
+section.supply p {
+  margin: 0 auto;
+}
+section.supply p {
+  margin-top: 16px;
+}
+section.supply .ringOptions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 280px;
+}
+section.supply .ringOptions div .ringImage {
+  width: 260px;
+  height: 260px;
+  background-color: #333333;
+}
+.commonRing .ringImage {
+  background-image: url('../public/images/example/all.png');
+  background-size: cover;
+}
+.epicRing .ringImage {
+  background-image: url('../public/images/example/ringPerfection.png');
+  background-size: cover;
+}
+.legendaryRing .ringImage {
+  background-image: url('../public/images/example/Legendary.png');
+  background-size: cover;
+}
+.mythicRing .ringImage {
+  background-image: url('../public/images/example/Mythic.png');
+  background-size: cover;
+}
+.content {
+  width: 512px;
+}
+.content h1,
+.content h2,
+section.supply h2 {
+  font-size: 40px;
+  line-height: 56px;
+}
+.content h3 {
+  font-size: 32px;
+  line-height: 44px;
+}
+.content h4,
+section.supply .ringOptions div h4 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+  margin-top: 48px;
+}
+.content ul {
+  margin-top: 20px;
+}
+.content ul li {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 1248px) {
+  body main {
+    /* background-color: rgba(38, 197, 91, 0.829); */
+    max-width: 90%;
+  }
+  body main #intro {
+    font-size: 30px;
+    line-height: 46px;
+  }
+  section {
+    align-items: flex-end;
+    justify-content: space-evenly;
+  }
+  .content {
+    min-width: 312px;
+    max-width: 360px;
+  }
+  section.rings .content {
+    margin-top: 0px;
+  }
+  section.supply .ringOptions {
+    justify-content: space-around;
+  }
+  section.supply .ringOptions > div {
+    margin-bottom: 80px;
+  }
+  section.timeline {
+    align-items: center;
+  }
+  .image-xl {
+    width: 600px;
+    height: 600px;
+  }
+  .image-sm,
+  .image-xl.ringProtection,
+  .image-xl.timeline {
+    height: 520px;
+    width: 520px;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  body main {
+    /* background-color: rgba(104, 6, 6, 0.637); */
+  }
+  .content {
+    min-width: 212px;
+    max-width: 320px;
+  }
+  section.forging {
+    align-items: stretch;
+  }
+  section.forging .content,
+  section.loot .content {
+    max-width: 50%;
+  }
+  section.loot {
+    align-items: center;
+  }
+  section.loot .content .everyone {
+    margin-top: 40px;
+  }
+  .image-xl {
+    width: 520px;
+    height: 520px;
+    margin-left: 40px;
+  }
+  .image-xl.forging {
+    height: auto;
+  }
+  .image-sm {
+    margin-right: 40px;
+  }
+  .image-sm,
+  .image-xl.ringProtection {
+    height: 440px;
+    width: 440px;
+  }
+}
+
+@media only screen and (max-width: 888px) {
+  body main {
+    /* background-color: rgba(52, 6, 104, 0.637); */
+  }
+  section.rarity {
+    margin-top: -64px;
+    align-items: flex-end;
+  }
+  section.loot {
+    align-items: center;
+  }
+  .image-xl {
+    width: 460px;
+    height: 460px;
+  }
+  .image-sm,
+  .image-xl.ringProtection {
+    height: 380px;
+    width: 380px;
+  }
+  .image-xl.timeline {
+    margin-left: -180px;
+  }
+}
+
+/* @media only screen and (max-width: 814px) {
+  body main {
+    background-color: rgba(6, 104, 19, 0.856);
+    max-width: 100%;
+    margin: 0 16px;
+  }
+  body main #intro .heading {
+    font-size: 22px;
+    line-height: 38px;
+    margin-left: 60px;
+  }
+  .content h1 {
+    font-size: 30px;
+    line-height: 44px;
+  }
+  .content h3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  section.rarity {
+    align-items: center;
+  }
+  section.rings .content {
+    margin-right: 60px;
+    max-width: 30%;
+  }
+  section.rarity .content {
+    margin-left: 60px;
+    max-width: 30%;
+  }
+  section.loot .content {
+    margin-right: 60px;
+  }
+  section.forging .content {
+    margin-left: 60px;
+  }
+  section.timeline .content {
+    margin-right: 60px;
+  }
+  .image-xl, .image-sm {
+    width: 460px;
+    height: 460px;
+  }
+  .image-xl.ringProtection {
+    width: 460px;
+    height: 460px;
+  }
+  .image-xl.ringRage, .image-xl.timeline {
+    margin-right: 50px;
+  }
+} */
+
+@media only screen and (max-width: 814px) {
+  body {
+    align-items: center;
+    max-width: 100vw !important;
+    overflow-x: hidden;
+  }
+  body main {
+    /* background-color: rgba(96, 6, 104, 0.637); */
+  }
+  body main #intro {
+    font-size: 40px;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+  }
+  body main #intro .heading {
+    font-size: 22px;
+    line-height: 38px;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-bottom: -100px;
+    z-index: 2;
+  }
+  section {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-bottom: 48px;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+  }
+  .content {
+    max-width: 85vw;
+  }
+  section.rings {
+    align-items: center;
+    margin-top: 48px;
+  }
+  section .content {
+    margin: 0px !important;
+    max-width: 85% !important;
+  }
+  section.rarity {
+    margin-top: 48px;
+    align-items: center;
+  }
+  section.loot {
+    margin-top: 48px;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  section.forging {
+    margin-top: 48px;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  section.timeline {
+    margin-top: 48px;
+    align-items: center;
+  }
+  section.supply {
+    margin-top: 48px;
+  }
+  section.supply .ringOptions {
+    margin-bottom: 0;
+  }
+  .content h4,
+  section.supply .ringOptions div h4 {
+    margin-top: 32px;
+  }
+  section.supply p.center {
+    text-align: center;
+  }
+  .image-xl,
+  .image-xl.forging,
+  .image-xl.ringProtection,
+  .image-xl.ringRag,
+  .image-xl.timeline {
+    width: 85vw;
+    height: 85vw;
+    margin: 0;
+  }
+  .image-sm {
+    order: 2;
+    width: 85vw;
+    height: 85vw;
+    margin: 0;
+  }
+  .image-xl.ringRage,
+  .image-xl.timeline {
+    margin: 16px 0 0 0;
+    order: 2;
+  }
+  .image-sm,
+  .image-xl {
+    margin-top: 30px !important;
+  }
+
+  section.supply .ringOptions div .ringImage {
+    width: 85vw;
+    height: 85vw;
+  }
+}

@@ -1,0 +1,2 @@
+export const LAUNCH_DATE_1 = 1638295200000; // Tue Nov 30 2021 10:00:00 GMT-0800
+export const LAUNCH_DATE_2 = LAUNCH_DATE_1 + 7 * 24 * 60 * 60 * 1000; // Tue Dec 6 2021 10:00:00 GMT-0800
