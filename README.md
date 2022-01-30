@@ -2,6 +2,8 @@
 
 <a href="https://rings.market/"><img src="./public/og-image.png"></a>
 
+Rings (for Loot) is the first and largest 3D interpretation of an entire category in Loot. Adventurers, builders, and artists are encouraged to reference Rings (for Loot) to further expand on the imagination of Loot.
+
 ## Getting Started
 
 First, run the development server:
@@ -22,6 +24,10 @@ yarn hardhat test
 ## Deployment
 
 Deployed to Vercel via GitHub.
+
+## Icons and 3D assets
+
+https://github.com/w1nt3r-eth/rings-for-loot/releases/tag/v1.0
 
 ## License
 
