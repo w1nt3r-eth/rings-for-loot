@@ -4,6 +4,8 @@
 
 Rings (for Loot) is the first and largest 3D interpretation of an entire category in Loot. Adventurers, builders, and artists are encouraged to reference Rings (for Loot) to further expand on the imagination of Loot.
 
+[Blog post about how we built Rings (for Loot)](https://www.w1nt3r.xyz/building-rings-for-loot/)
+
 ## Getting Started
 
 First, run the development server:
