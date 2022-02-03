@@ -29,7 +29,7 @@ Deployed to Vercel via GitHub.
 
 ## Icons and 3D assets
 
-https://github.com/w1nt3r-eth/rings-for-loot/releases/tag/v1.1.0
+https://github.com/w1nt3r-eth/rings-for-loot/releases
 
 ## License
 
