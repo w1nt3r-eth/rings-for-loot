@@ -36,3 +36,4 @@ https://github.com/w1nt3r-eth/rings-for-loot/releases
 CC0.
 
 Builders are encouraged to learn from our project and use any parts of it in their own projects (including commercial and closed source ones)!
+
